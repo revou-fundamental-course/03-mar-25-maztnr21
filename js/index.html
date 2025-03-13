@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>School Profile Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <h1>School Logo</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#profile">Our Profile</a></li>
+          <li><a href="#achievement">Achievement</a></li>
+          <li><a href="#message-us">Message Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- HOME SECTION -->
+    <section id="home" class="home-section">
+      <div class="welcome-container">
+        <h2 id="welcome-message">Hi Harfi, Welcome To Website</h2>
+        <p>Ini adalah website latihan pertama</p>
+        <div class="name-input-container">
+          <input type="text" id="userName" placeholder="Enter your name">
+          <button id="setUserName">Set Name</button>
+        </div>
+      </div>
+      <!-- Banner image (placeholder 1366x578) -->
+      <div class="hero-image">
+        <img src="https://via.placeholder.com/1366x578" alt="Hero Image">
+      </div>
+    </section>
+
+    <!-- OUR FACILITATION SECTION -->
+    <section id="achievement" class="facilitation-section">
+      <h2>Our Facilitation</h2>
+      <div class="facilitation-container">
+        <div class="facility">
+          <div class="icon-circle">PT</div>
+          <p>Professional Teacher</p>
+        </div>
+        <div class="facility">
+          <div class="icon-circle">SF</div>
+          <p>Sport Field</p>
+        </div>
+        <div class="facility">
+          <div class="icon-circle">CL</div>
+          <p>Classroom</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR PROFILE SECTION -->
+    <section id="profile" class="profile-section">
+      <h2>Our Profile</h2>
+      <div class="profile-info">
+        <p>
+          Here you can include detailed information about your school. Customize this text to reflect the school's history, values, and achievements.
+        </p>
+      </div>
+    </section>
+
+    <!-- MESSAGE US SECTION -->
+    <section id="message-us" class="message-section">
+      <h2>Message Us</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="contactName">Nama:</label>
+          <input type="text" id="contactName" name="contactName" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <label for="dob">Tanggal Lahir:</label>
+          <input type="date" id="dob" name="dob" required>
+        </div>
+        <div class="form-group">
+          <label>Jenis Kelamin:</label>
+          <label>
+            <input type="radio" name="gender" value="Laki-Laki" required> Laki-Laki
+          </label>
+          <label>
+            <input type="radio" name="gender" value="Perempuan" required> Perempuan
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="contactMessage">Pesan:</label>
+          <textarea id="contactMessage" name="contactMessage" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <!-- Submission results will be displayed here -->
+      <div id="submissionResult" class="submission-result"></div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Created By Revolu</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
